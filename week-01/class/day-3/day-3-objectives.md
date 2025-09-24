@@ -91,3 +91,24 @@ Agenda Today
 8. Printing and User input 
 9. Using AI effectively lesson
 10. Recap and Q&A
+
+What did you learn today?
+
+1. Using Scanner
+   1. Scanner varName = new Scanner(System.in)
+   2. .nextLine() - consumes String values
+   3. .nextInt() - consumes int
+   4. .nextBoolean()
+   5. .nextFloat()
+   6. .nextDouble()
+2. System.in
+3. Format Specifiers
+   1. %
+      1. double/float - %.2f for 2 decimal places of double/float
+      2. int - %d 
+4. \n - new line character
+5. printf - print with formatting
+6. souf + tab = System.out.printf()
+7. Translating formula/equations to code
+8. Consuming the CRLF - Carriage Return Line Feed
+   1. Handles new line characters
