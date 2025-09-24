@@ -95,12 +95,13 @@ Agenda Today
 What did you learn today?
 
 1. Using Scanner
-   1. Scanner varName = new Scanner(System.in)
-   2. .nextLine() - consumes String values
-   3. .nextInt() - consumes int
-   4. .nextBoolean()
-   5. .nextFloat()
-   6. .nextDouble()
+   1. import java.util.Scanner;
+   2. Scanner varName = new Scanner(System.in)
+   3. .nextLine() - consumes String values
+   4. .nextInt() - consumes int
+   5. .nextBoolean()
+   6. .nextFloat()
+   7. .nextDouble()
 2. System.in
 3. Format Specifiers
    1. %
