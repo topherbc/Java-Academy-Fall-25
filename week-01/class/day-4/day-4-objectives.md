@@ -43,3 +43,35 @@ Agenda Today
 8. Break
 9. Debug Project
 10. Recap and Q&A
+
+What did you learn today?
+
+1. Debugging
+2. Logic is the prediction of what is possible
+3. Methods - functions
+   1. Method Syntax: public static datatype nameOfMethod(argDataType argName) {}
+   2. does something
+   3. void - returns no value
+   4. datatype requred when returning
+   5. args are optional
+4. Conditions are propositions to be acted upon
+   1. if
+   2. else if
+   3. else
+5. Logical Operators
+   1. &&
+   2. || == OR
+   3. ! == not/bang
+6. Comparisson Operators
+   1. ==
+   2. !=
+   3. <
+   4. >
+   5. <=
+   6. >=
+   7. .equals() - comparing strings
+   8. .equalsIgnoreCase() - comparing strings ignoring the casing
+7. Format Specifier Tricks
+   1. When formatting with a percent, we need double Ex. printf("%%")
+8. D.R.Y. - Don't Repeat Yourself
+9. It is recommended to step away when stressing
