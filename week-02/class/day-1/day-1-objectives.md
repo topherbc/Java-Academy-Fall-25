@@ -40,3 +40,23 @@ Agenda Today
 8. String Conversion
 9. Start high score wins exercise
 10. Recap and Q&A
+
+
+What did you learn today?
+
+1. YYYY-MM-DD: standard date format for programming
+2. String Methods
+   1. .split() 
+      1. .split needs a delimeter '|' to split on ("\\\")
+      2. Pattern.quote("|")
+      3. [] allows multi delimeter
+   2. .substring() captures string from string by position of chars
+   3. .trim() - removes spaces at beg and end
+   4. .toUpperCase()
+   5. .toLowerCase()
+   6. .length()
+3. Conversion
+   1. Integer.parseInt(String) - convert a string to int
+4. LocalDate
+5. [].length 
+   1. counts based on character, not index
