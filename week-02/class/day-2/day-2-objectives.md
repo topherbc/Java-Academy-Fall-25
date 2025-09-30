@@ -77,3 +77,30 @@ Agenda Today
 9. Break
 10. Classes, getters and setter methods
 11. Recap and Q&A
+
+What did you learn today?
+
+1. class
+   1. Constructor
+      1. Constructs the object
+      2. Constructor name is the same as the class name
+   2. setter methods
+   3. getter methods
+   4. public setter/getter allows access to private property data
+   5. Instantiation - creates an instance of a class
+      1. Instance is an object
+      2. `new` keyword creates the instance
+   6. Encapsulation - private/public access of data
+   7.  Access Modifiers
+      1. public - allows outside members to have access
+      2. private - outside class does not have access
+   8.  this - refers to the instance of the class/object
+2. StringBuilder
+   1. .append() - builds string method
+   2. .toString() - turns to String
+3. Parameters
+4. += allows concatenation for String types
+5. [] <- These are referred to as square brackets
+6. {} <- These are referred to as curly brackets/braces
+7. Code runs in sequential order
+8. Executive Function
