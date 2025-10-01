@@ -44,3 +44,18 @@ Agenda Today
 8. Break
 9. We do, TV Remote
 10. Recap and Q&A
+
+
+What did you learn today?
+
+1. switch
+2. Overloading
+3. Define variable prior to assignment
+4. What are ducks and why are they useful
+5. Method Signatures
+6. Generating getters and setters and constructors
+7. CMD + F == find in file
+8. Creating more than one method in a class
+9. Scanner after nextInt requires a nextLine to consume the unconsumed new line character
+10. Properties, same data type can be defined on the same line
+    1.  `private String make, model;`
