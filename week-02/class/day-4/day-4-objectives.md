@@ -34,3 +34,27 @@ Today's Agenda
 9. Break
 10. We do VehicleInventory
 11. Recap and Q&A
+
+What did you learn today?
+
+1. Iteration
+   1. Repeating a process/action
+   2. Produces incremental change
+2. Loops
+   1. while loop
+   2. for loop
+      1. For range
+      2. Defines the counters in parameter list
+      3. i is standard first for variable
+         1. i stands for iteration
+   3. do / while loop
+3. Arrays
+   1. Only ONE DATA TYPE
+   2. Arrays are limited to a defined amount of positions
+   3. index start at 0
+   4. index is the value position in array
+   5. Arrays.sort()
+   6. variable = new Class[variable.length + 1]
+4. Last Index of an Array is always array.length - 1
+5. switch cases need break;
+6. Switches are great to check against a list of possible values
