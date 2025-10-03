@@ -66,15 +66,52 @@ public class App {
                     findVehiclesByColor(vehicleInventory, color);
                     break;
                 case 5:
-//                addAVehicle();
+                    vehicleInventory = addVehicle(scanner, vehicleInventory);
                     break;
                 case 6:
                     System.exit(0);
+                    scanner.close();
             }
 
             System.out.println("Hit ENTER to continue");
             scanner.nextLine();
         }
+    }
+
+    public static Vehicle[] addVehicle(Scanner input, Vehicle[] currentInventory) {
+        System.out.println("--Welcome to the Add Vehicle Screen--\n");
+
+        System.out.print("Enter the VehicleID: ");
+        long vehicleId = input.nextLong();
+        input.nextLine();
+
+        System.out.print("Enter the Make and Model (separate by space): ");
+        String makeModel = input.nextLine();
+
+        System.out.print("Enter the Color: ");
+        String color = input.nextLine();
+
+        System.out.print("Enter the Odometer Reading: ");
+        int odometer = input.nextInt();
+        input.nextLine();
+
+        System.out.print("Enter the Price: ");
+        double price = input.nextDouble();
+        input.nextLine();
+
+        Vehicle newAddition = new Vehicle(vehicleId, makeModel, color, odometer, price);
+
+        Vehicle[] newInventory = new Vehicle[currentInventory.length + 1];
+
+        for (int i = 0; i < currentInventory.length + 1; i++) {
+            if (i == currentInventory.length) {
+                newInventory[i] = newAddition;
+            } else {
+                newInventory[i] = currentInventory[i];
+            }
+        }
+
+        return newInventory;
     }
 
     public static void listAllVehicles(Vehicle[] inventory) {
