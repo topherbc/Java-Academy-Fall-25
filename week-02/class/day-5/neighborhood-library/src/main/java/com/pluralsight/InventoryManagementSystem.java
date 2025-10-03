@@ -1,10 +1,14 @@
 package com.pluralsight;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class InventoryManagementSystem {
     public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
 
         Book[] inventory = {
-                new Book(1, "555FBCND", "The Phoenix Project", "", false),
+                new Book(1, "555FBCND", "The Phoenix Project", "Bob", true),
                 new Book(2, "978-0132350884", "Clean Code", "", false),
                 new Book(3, "978-0201633610", "Design Patterns", "", false),
                 new Book(4, "978-0136291558", "Object Oriented Software Engineering", "", false),
@@ -25,6 +29,37 @@ public class InventoryManagementSystem {
                 new Book(19, "978-0596007126", "Head First Design Patterns", "", false),
                 new Book(20, "978-1492040347", "Kubernetes: Up and Running", "", false)
         };
+
+        System.out.println("---Super Duper's Library Inventory System---\n");
+
+        //Display the Home Screen until User exits
+        while(true) {
+
+            System.out.println("Please choose from the following options");
+            System.out.println("   1. Show Available Books");
+            System.out.println("   2. Show Checked Out Books");
+            System.out.println("   3. Exit Program\n");
+            System.out.print("Enter a number choice: ");
+            int userChoice = keyboard.nextInt();
+            keyboard.nextLine();
+
+            switch (userChoice) {
+                case 1: //Show Available Books
+                    //showAvailableBooks()
+                    break;
+                case 2: //Show Checked Out Books
+                    //showCheckedOutBooks()
+                    break;
+                case 3: //Exit Program
+                    keyboard.close();
+                    System.exit(0);
+                    break;
+                default: //Invalid Choice
+                    System.out.println("Invalid Choice, try again...");
+            }
+
+        }
+
 
 
 
