@@ -12,7 +12,7 @@ public class InventoryManagementSystem {
                 new Book(2, "978-0132350884", "Clean Code", "", false),
                 new Book(3, "978-0201633610", "Design Patterns", "", false),
                 new Book(4, "978-0136291558", "Object Oriented Software Engineering", "", false),
-                new Book(5, "978-0137081073", "The Clean Coder", "", false),
+                new Book(5, "978-0137081073", "The Clean Coder", "Frank", true),
                 new Book(6, "978-0134685991", "Effective Java", "", false),
                 new Book(7, "978-0135957059", "The Pragmatic Programmer", "", false),
                 new Book(8, "978-0321125215", "Domain-Driven Design", "", false),
@@ -45,7 +45,7 @@ public class InventoryManagementSystem {
 
             switch (userChoice) {
                 case 1: //Show Available Books
-                    //showAvailableBooks()
+                    showAvailableBooks(inventory);
                     break;
                 case 2: //Show Checked Out Books
                     //showCheckedOutBooks()
@@ -60,8 +60,13 @@ public class InventoryManagementSystem {
 
         }
 
+    }
 
-
-
+    public static void showAvailableBooks(Book[] books) {
+        for (Book book : books) {
+            //show only available, we need to check if they are available
+            //Title, ISBN, and the ID
+            System.out.println(book.getTitle());
+        }
     }
 }
