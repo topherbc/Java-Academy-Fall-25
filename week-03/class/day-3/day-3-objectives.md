@@ -41,3 +41,22 @@ Agenda Today
 9. Break
 10. We build hashmap app
 11. Recap and Q&A
+
+What did you learn today?
+
+1. ArrayList
+   1. must be imported
+   2. .add()
+   3. .get()
+   4. .clear() - clears all arraylist items
+2. HashMap
+   1. key and values
+      1. keys are like labels
+      2. identifies value
+   2. must be imported
+   3. .put()
+   4. .values() - gets list of values
+   5. .keySet() - gets list of keys
+   6. .replace() - replaces value
+   7. .remove() - removes item
+3. Text Block can be made using """ """
