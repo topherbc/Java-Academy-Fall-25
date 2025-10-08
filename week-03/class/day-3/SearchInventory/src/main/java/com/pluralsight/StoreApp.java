@@ -8,12 +8,11 @@ import java.util.Scanner;
 
 public class StoreApp {
     public static void main(String[] args) {
-        System.out.println("---Welcome to Super Duper's Product Inventory System---\n");
-
         run();
     }
 
     public static void run() {
+        System.out.println("---Welcome to Super Duper's Product Inventory System---\n");
         while(true) {
             menu();
             menuSelector();
@@ -47,10 +46,18 @@ public class StoreApp {
                 //searchProductByID(inventory, id)
                 break;
             case 3:
-                //searchProductByPriceRange(inventory, startRange, endRange)
+                System.out.print("Enter a starting value: ");
+                int startRange = scanner.nextInt();
+                scanner.nextLine();
+
+                System.out.print("Enter a ending value: ");
+                int endRange = scanner.nextInt();
+                scanner.nextLine();
+
+                searchProductByPriceRange(inventory, startRange, endRange);
                 break;
             case 4:
-                //inventory = addProduct(inventory)
+                //addProduct()
                 break;
             case 5:
                 scanner.close();
@@ -75,7 +82,6 @@ public class StoreApp {
         //            inventory.add(new Product(1238, "Car Battery", 89.99f));
         //            inventory.add(new Product(1239, "Spark Plugs 4-Pack", 32.75f));
 
-
         try {
             BufferedReader bufReader = new BufferedReader(new FileReader("src/main/resources/inventory.csv"));
 
@@ -97,6 +103,14 @@ public class StoreApp {
         }
 
         return inventory;
+    }
+
+    public static void searchProductByPriceRange(ArrayList<Product> inventory, int startRange, int endRange) {
+        for (Product p : inventory) {
+            if (startRange <= p.getPrice() && endRange >= p.getPrice()) {
+                displayProduct(p);
+            }
+        }
     }
 
     public static void viewAll(ArrayList<Product> inventory) {
