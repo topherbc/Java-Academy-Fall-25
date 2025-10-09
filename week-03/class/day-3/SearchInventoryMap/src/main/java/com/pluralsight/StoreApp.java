@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class StoreApp {
     public static void main(String[] args) {
-        run();
+        run(); //Activate / Invoke / Calling
     }
 
     public static void run() {
         System.out.println("---Welcome to Super Duper's Product Inventory System---\n");
 
-        while(true) {
-            menu();
-            menuSelector();
+        while(true) { //Keeping calling both methods, until... something
+            menu(); //Invoke
+            menuSelector(); //Invoke
         }
     }
 
@@ -36,7 +36,7 @@ public class StoreApp {
 
         System.out.print("Chose a number option: ");
         int option = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); //Consume the Return/new line/CRLF
 
         switch (option) {
             case 1:
@@ -62,7 +62,7 @@ public class StoreApp {
         }
 
         System.out.println("\nPress ENTER to continue...");
-        scanner.nextLine();
+        scanner.nextLine(); //Handles the ENTER key
     }
 
     public static HashMap<String,Product> loadInventory() {
@@ -74,7 +74,7 @@ public class StoreApp {
             String input;
 
             while((input = bufReader.readLine()) != null) {
-                String[] tokens = input.split("\\|");
+                String[] tokens = input.split("\\|"); //Input from CSV, the data, split by |
 
                 int id = Integer.parseInt(tokens[0]);
                 String name = tokens[1];
@@ -85,7 +85,7 @@ public class StoreApp {
 
             bufReader.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); //Error chain
         }
 
         return inventory;
@@ -97,20 +97,20 @@ public class StoreApp {
 
         System.out.print("  Enter the ID: ");
         int id = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); //Handle Enter
 
         System.out.print("  Enter the Name: ");
         String name = scanner.nextLine();
 
         System.out.print("  Enter the Price (numbers/decimal only): ");
         float price = scanner.nextFloat();
-        scanner.nextLine();
+        scanner.nextLine(); //Handle Enter
 
         try {
             BufferedWriter bufWriter = new BufferedWriter(new FileWriter("src/main/resources/inventory.csv", true));
             bufWriter.newLine();
             bufWriter.write(String.format("%d|%s|%.2f", id, name, price));
-            bufWriter.close();
+            bufWriter.close(); //Saves file
         } catch(IOException e) {
             e.printStackTrace();
         }
@@ -119,7 +119,7 @@ public class StoreApp {
     public static void searchProductByPriceRange(HashMap<String,Product> inventory, Scanner scanner) {
         System.out.print("Enter a starting value: ");
         int startRange = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); //absorb new line because nextInt above
 
         System.out.print("Enter a ending value: ");
         int endRange = scanner.nextInt();
